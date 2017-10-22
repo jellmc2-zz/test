@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-子元素选择器</title>
+    <style>
+        /*
+        div>p{
+            color:red;
+        }
+        */
+        /*
+        #identity>p{
+            color: blue;
+        }
+        */
+        #identity>ul>li>p{
+            color:purple;
+        }
+
+    </style>
+</head>
+<body>
+<p>我是段落</p>
+<div id="identity">
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <ul>
+        <li>
+            <p>我是段落</p>
+        </li>
+    </ul>
+</div>
+<p>我是段落</p>
+</body>
+</html>
